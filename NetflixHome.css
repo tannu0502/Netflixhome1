@@ -1,0 +1,163 @@
+/* Main Home Container */
+.netflix-home {
+  padding: 20px;
+  background-color: #141414;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Section Titles */
+.banner-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.banner-subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+/* Category Section */
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* Card Container */
+.video-card {
+  width: 220px;
+  height: 140px;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.video-card:hover {
+  transform: scale(1.08);
+  z-index: 10;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-overlay h3 {
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0;
+}
+
+/* Fullscreen Video Modal */
+.fullscreen-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.player-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: red;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+/* Slick Carousel Core Fix for Horizontal Scroll */
+.slick-slider {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slick-slide {
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.slick-slide > div {
+  display: flex;
+  flex-direction: column;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #1c1c1c;
+  color: white;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+.no-results {
+  color: #ccc;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+.welcome-text {
+  font-size: 1.2rem;
+  color: #ffdd57;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.welcome-message {
+  font-size: 1.3rem;
+  color: #e50914;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
